@@ -1,13 +1,10 @@
-/* Cs css copied from the chat(rashmi)*/
-
 /* Reset default margin and padding */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    box-sizing:border-box ;
+
 
 }
-
 .container {
     width: 1303px;
     height: 50vh ;
@@ -17,14 +14,77 @@ body, h1, h2, p, ul, li {
 }
 .img_deg{
     float:right;
-    width: 35%;
-    
+    width: 40%;
 
 }
 .pos_cen{
     position: sticky;
-    width:98% ;
+    width:95% ;
 }
+.card{
+    width:260px;
+    height:230px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px 50px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin:50px 20px;
+    background-position: center;
+    transition: transform 0.5s;
+    
+    
+}
+.card1{
+    background-image: url("https://www.mooc.org/hubfs/cybersecurity-computer-science.jpg ");
+    
+}
+.card2{
+    background-image: url("https://engineering.nyu.edu/sites/default/files/styles/content_header_1024_2x/public/2022-02/nyu-edx-basics-computing-and-programming.jpg?h=1c9b88c9&itok=5_N3zA-l");
+   
+}
+.card:hover{
+    transform: translateY(-10px);
+
+}
+.button{
+    text-decoration: none;
+    top: 156px;
+    width: 260px;
+    margin-left: 22px;
+    border: 1px rgb(0, 1, 61) solid;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(25, 43, 212);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: white;
+    position: relative;
+}
+.button:hover{
+    background-color: rgb(0, 1, 61);
+    color: white;
+    transition: 0.5s;
+}
+
+/* button{
+    width:200px;
+    color:#000;
+    font-size:25px;
+    padding:12px 0px;
+    cursor: pointer;
+    background:#fff;
+    border:0;
+    border-radius: 5px;
+    outline:none;
+    margin-top:15;
+    position: relative;
+    left:-15%;
+    bottom:-60%    
+} */
+
+
 
 /* Set a background color and text color */
 body {
@@ -81,42 +141,42 @@ ul li a:hover{
 }
 
 /* Styles for the submenu */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position the submenu below the parent */
-    left: 0;
-    background-color: #000770;
-    z-index: 2; /* Ensure the submenu appears above the navigation menu */
-}
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%; /* Position the submenu below the parent */
+        left: 0;
+        background-color: #000770;
+        z-index: 2; /* Ensure the submenu appears above the navigation menu */
+    }
 
-.dropdown:hover .submenu {
-    display: block;
-}
+    .dropdown:hover .submenu {
+        display: block;
+    }
 
-.submenu li {
-    margin: 0;
-    display: block;
-}
+    .submenu li {
+        margin: 0;
+        display: block;
+    }
 
-.submenu a {
-    padding: 10px;
-    font-size: 18px;
-}
+    .submenu a {
+        padding: 10px;
+        font-size: 18px;
+    }
 
-/* Style the Font Awesome arrow icon */
-nav li.dropdown > a i {
-    margin-left: 5px; /* Add spacing between the text and icon */
-    font-size: 12px; /* Adjust the icon size as needed */
-}
+    /* Style the Font Awesome arrow icon */
+    nav li.dropdown > a i {
+        margin-left: 5px; /* Add spacing between the text and icon */
+        font-size: 12px; /* Adjust the icon size as needed */
+    }
 
-/* Style the submenu items without the arrow */
-nav .submenu a {
-    display: block; /* Display the items as blocks */
-    white-space: nowrap; /* Prevent wrapping to the next line */
-    margin-right: 10px; /* Add spacing between items */
-    text-align: left; /* Align text to the left */
-}
+    /* Style the submenu items without the arrow */
+    nav .submenu a {
+        display: block; /* Display the items as blocks */
+        white-space: nowrap; /* Prevent wrapping to the next line */
+        margin-right: 10px; /* Add spacing between items */
+        text-align: left; /* Align text to the left */
+    }
 
 
 /* Main content styles */
@@ -126,10 +186,10 @@ h1{
     font-weight: 500;
 }
 h2{
-    font-size: 30px;
-    text-align: left;
-    font-weight: 500;
-    color: black;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(59, 23, 143);
 }
 p {
     
@@ -138,80 +198,6 @@ p {
     color: rgb(1, 11, 87);
     
 }
-p2{
-    color: #060131;
-    font-size:15px ;
-   
-}
-
-p3{
-    color: #cf1010e5;
-    font-size: 20px;   
-}
-p4{
-    color: rgb(22, 12, 77);
-    font-size: 15px;
-    
-}
-button{
-    width: 150px;
-    height: 40px;
-    background-color: #000770;
-    color: #fff;
-    border:2px solid blue;
-}
-button:hover{
-    background-color: transparent;
-    color: #000770;
-}
-.table-box{
-    margin: 5px auto;
-}
-.table-row{
-    display: table;
-    width: 70%;
-    margin: 2px auto;
-    font-family: sans-serif;
-    background:rgb(232, 232, 238) ;
-    padding: 5px 0;
-    color: #242020;
-    font-size: 5px;
-    box-shadow: 0 1px 4px 0 rgba(o,o,50,0.3);
-
-}
-.table-row1{
-    display: table;
-    width: 70%;
-    margin: 5px auto;
-    font-family: sans-serif;
-    background:rgb(89, 89, 94) ;
-    padding: 5px 0;
-    color: #242020;
-    font-size: 10px;
-    box-shadow: 0 1px 4px 0 rgba(o,o,50,0.3);
-}
-.table-row2{
-    display: table;
-    width: 70%;
-    margin: 5px auto;
-    font-family: sans-serif;
-    background:rgb(180, 180, 184) ;
-    padding: 5px 0;
-    color: #928181;
-    font-size: 10px;
-    box-shadow: 0 1px 4px 0 rgba(o,o,50,0.3);
-}
-
-.table-cell{
-    display: table-cell;
-    width: 10%;
-    text-align: center;
-    padding: 4px 0;
-    border-right:1px solid #ffffff;
-    vertical-align: middle;
-
-}
-
 
 /* CSS for your existing footer styles */
 /* Footer styles */
@@ -223,4 +209,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.end{
+    padding-top: 50px;
 }
