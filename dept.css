@@ -122,7 +122,25 @@ nav li {
     margin-right: 20px;
     font-size: 20px;
     position: relative; /* Create a stacking context for submenus */
+    border-right: 1px solid #4f5677; /* Add a (whiteNOT) border to separate menu items */
+    padding-right: 20px; /* Add some space on the right side of the menu items */
 }
+
+nav li:last-child {
+    border-right: none; /* Remove the border on the last menu item */
+}
+/* Add a pseudo-element to create the separation line *_/
+nav li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px; /* Width of the separation line *_/
+    background-color: #ffffff; /* Color of the separation line *_/
+    z-index: -1; /* Place it behind the menu items *_/
+}
+ */
 
 nav a {
     text-decoration: none;
@@ -132,12 +150,16 @@ nav a {
     font-weight: 600;
     font-style: normal;
     display: block;
-    padding: 10px;
+    padding: 10px ;
 }
+
+
+
+
 ul li a:hover{
     background-color: rgb(142, 143, 153);
     color: rgb(29, 23, 23);
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 /* Styles for the submenu */
