@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vision and Mission - Faculty Of Computing</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .container {
+                position: relative;
+                display: inline-block; /* Add this property */
+            }
+            .containerimg {
+                width: 100%;
+                display: block;
+            }
+            .overlay-text {
+                position: absolute;
+                color: rgb(0, 0, 0);
+                font-size: 30px;
+                text-align: center;
+                background: rgb(255, 255, 255);
+                padding: 10px;
+                width: 90%;
+                left: 5%;
+                top: 50%; /* Adjust top property to position text in the middle of the image */
+                transform: translate(0, -50%); /* Center the text vertically */
+            }
+        </style>
+    </head>
+    <body>
+         <div class="container">
+            <img class="containerimg" src="https://kdu.ac.lk/wp-content/uploads/2022/09/6-scaled.jpg" alt="">
+            <div class="overlay-text">
+                <p><b>Vision</b></p>
+                <p>Be an internationally recognized center for education in Computing and Information sciences as well as multi-disciplinary research focusing on national needs.</p>
+                <p><b>Mission</b></p>
+                <p>To produce internationally recognized graduates in Computing and Information sciences while providing a productive research environment.</p>
+            </div>
+        </div>
+    </body>
+</html>
