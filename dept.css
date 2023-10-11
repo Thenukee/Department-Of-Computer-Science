@@ -8,6 +8,7 @@ body, h1, h2, p, ul, li {
 .container {
     width: 100%;
     height: 20vh ; 
+   
    /*
    change height padding btw top
    removed for to insert a header background-image: url("computerscience.png");*/
@@ -16,13 +17,12 @@ body, h1, h2, p, ul, li {
 }
 .navigation{
     width: 100%;
-    height: 50vh ; 
+    height: auto ; 
     z-index: 1000;
 }
 .img_deg{
-    float:right;
-    width: 40%;
-
+    width: 100%;
+    height: auto;
 }
 .pos_cen{
     position: sticky;
@@ -57,7 +57,7 @@ body, h1, h2, p, ul, li {
 .navigation .button{
     text-decoration: none;
     top: 156px;
-    width: 260px;
+    width: 100%;
     margin-left: 22px;
     border: 1px rgb(0, 1, 61) solid;
     padding: 5px;

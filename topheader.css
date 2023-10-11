@@ -5,7 +5,10 @@
 .brand {
   font-weight: bold;
   font-size: 20px; }
-
+  .brand img {
+    max-width: 100%;
+    height: auto;
+}
 .site-header {
   position: relative;
   background-color: #1d3461ff; }
@@ -38,8 +41,20 @@
     transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
     .nav__wrapper.active {
       visibility: visible;
+      display: block;
       opacity: 1;
-      transform: translateY(0); } }
+      transform: translateY(0); }
+      .top-header {
+        padding: 1rem 0;
+    } 
+    .nav__toggle {
+      display: block;
+  }
+  .nav__item {
+    display: block;
+    text-align: center;
+}
+  }
 
 .site-header .nav__item a {
   display: block;

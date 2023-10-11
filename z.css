@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add responsive styles for the container */
+.container {
+    max-width: 100%;
+    padding: 0;
+    background-image: url("computerscience.png");
+}
+
+.navigation {
+    max-width: 100%;
+    height: auto;
+    background-color: #1f487eff;
+}
+
+/* Add responsive styles for the header logo */
+.brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add responsive styles for the video */
+.bgVideoCnt video {
+    width: 100%;
+    height: auto;
+}
+
+/* Add responsive styles for the image */
+.img_deg {
+    width: 100%;
+    height: auto;
+}
+
+/* Add responsive styles for the "View More" buttons */
+.navigation .button {
+    width: 100%;
+}
+
+/* Add responsive styles for the "top header" on smaller screens */
+@media (max-width: 599px) {
+    .top-header {
+        padding: 1rem 0;
+    }
+}
+
+/* Add responsive styles for the navigation menu */
+@media (max-width: 599px) {
+    .nav__toggle {
+        display: block;
+    }
+    
+    .nav__wrapper.active {
+        display: block;
+    }
+
+    .nav__item {
+        display: block;
+        text-align: center;
+    }
+
+    .nav__item a {
+        padding: 1rem 0;
+    }
+}
+
+/* Add responsive styles for the search toggle button */
+@media (max-width: 599px) {
+    .search-toggle {
+        display: block;
+        text-align: center;
+    }
+
+    #search-button {
+        padding: 1rem 0;
+    }
+}
+
+/* Additional responsive styles can be added as needed */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.wrapper {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add your other styles... */
+
+/* Add responsive styles for the button */
+.button {
+    min-width: 100%;
+}
+
+/* Add responsive styles for the button icon */
+.button svg {
+    width: 100%;
+    height: auto;
+}
