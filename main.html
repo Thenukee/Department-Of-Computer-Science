@@ -4,47 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of Computer Science</title>
+    <!--top header-->
+    <link rel="icon" type="image/png" href="Crest-KDU.png"/>
+    <meta name="msapplication-TileImage" content="Crest-KDU.png">
+    <link rel="stylesheet" href="tophreset.min.css" />
+    <link rel="stylesheet" href="tophstyle.css" />
+    <link rel="stylesheet" href="topheader.css" />
+     <!--top header css ends-->
+     <link rel="stylesheet" href="video.css" />
+
     <link rel="stylesheet" type="text/css" href="dept.css">
     <link rel="stylesheet" href="https://use.typekit.net/wef2epu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="KDU LOGO NEW.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="kdu-logo2.png.webp">
 </head>
 <body>
-<header>  
-    <div class="container"></div>
+   
+<header >  
+    <div class="container">
+        <div class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <a href="#" class="brand"><img src="logo_on_top.png.webp" alt="logo_on_top"></a>
+            <nav class="nav">
+              <button class="nav__toggle" aria-expanded="false" type="button">
+                menu
+              </button>
+              <ul class="nav__wrapper">
+                <li class="nav__item"><a href="#">kdu.ac</a></li>
+             <!--  <li class="nav__item"><a href="#">About</a></li>--> 
+                <li class="search-toggle">
+                    <button id="search-button" aria-label="Search">
+                
+                        <i class="fas fa-search"></i>
+                        
+                    </button>
+                </li> 
+                <li class="nav__item"><a href="#">Down</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+           <!-- top Header End -->
+   
+    <div class="navigation">
         <nav>
             <ul>
-                <li><a href="main.html">Home</a></li>
+                <li><a href="main.html" id="rightb" >Home</a></li>
                 <li class="dropdown">
-                    <a href="#">Degree Programs <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" id="rightb">Degree Programs <i class="fas fa-chevron-down"></i></a>
                     <ul class="submenu">
-                        <li><a href="CS.html">Computer Science</a></li>
-                        <li><a href="SE.html">Software Engineering</a></li>
+                        <li><a href="CS.html" >Computer Science</a></li>
+                        <li><a href="SE.html" >Software Engineering</a></li>
                     </ul>
                 </li>  
                 <li class="dropdown"> 
-                    <a href="#">Staff <i class="fas fa-chevron-down"></i> </a>  
+                    <a href="#"id="rightb">Staff <i class="fas fa-chevron-down"></i> </a>  
                     <ul class="submenu">
-                        <li><a href="#">Acedemic</a></li>
+                        <li><a  href="#">Acedemic</a></li>
                         <li><a href="#">Non Acedemic</a></li>
                     </ul>
                  </li>                                        
-                <li><a href="#">Research</a></li>
-                <li><a href="Contact_us.html">Contact</a></li>
+                <li><a href="#" id="rightb">Research</a></li>
+                <li><a href="Contact_us.html" id="rightb">Contact</a></li>
                 <li><a href="#">About Us</a></li>
+                <!-- moving to nav_wrapper
                 <li class="search-toggle">
                     <button id="search-button" aria-label="Search">
-                       <!-- <span>&#128270;</span>-->
+                        <span>&#128270;</span>
                         <i class="fas fa-search"></i>
 
 
-                         <!-- Magnifying glass HTML entity -->
+                        magnifing glass
+
                     </button>
-                </li>
+                </li> -->
             </ul>
-        </nav>    
+        </nav>   
+        </div> 
+    </div>
     </header>
     <br>
+    <div class="main-content">
+   <!--  <div class="video-container">
+          <video controls width="640" height="360">
+              <source src="videoplayback.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div> -->
+          
+          <div class="bgVideoCnt">
+            <video autoplay loop muted playsinline>
+              <source src="videoplayback.webm" type="video/webm" width="100%">
+              Your browser does not support the video tag
+            </video> 
+        
+        <!--div class="slider-logo" style="cursor: pointer;">
+           <div class="row justify-content-left hover-zoom">
+              
+                 <div data-bs-toggle="modal" data-bs-target="#Banks">
+                    <a href="https://navy.lk/application.html"> <img src="assets/img/vacancies_icon.png" width="80%" height="100%"> </a>
+                 </div>
+           
+            
+           </div>
+        
+        </div-->
+        <!---- Medal 01 row image end----> 
+        <!---- Medal detail box start---->	  
+        <!---- Medal detail box end---->
+          </div>
+
+
+
     <div class="pos_cen">
         <img class="img_deg"  src="https://foc.kdu.ac.lk/computer_science/wp-content/uploads/2021/10/banner1.jpg" alt="Walawwa">
      
@@ -80,7 +151,9 @@ Welcome to the Faculty of Computing</h2>
     <footer>
         &copy; 2023 Department of Computer Science, KDU
     </footer>
-</div>            
-
+</div>    
+</div>       
+<script src="js/header-1.js"></script> 
+<script src="navigation_bar.js"></script>
 </body>
 </html>

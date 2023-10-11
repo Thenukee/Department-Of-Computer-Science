@@ -1,0 +1,12 @@
+.video-container {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the video container horizontally */
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+
+  .bgVideoCnt video {
+    width: 100vw;
+}

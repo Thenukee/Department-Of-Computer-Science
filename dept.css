@@ -6,11 +6,18 @@ body, h1, h2, p, ul, li {
 
 }
 .container {
-    width: 1303px;
-    height: 50vh ;
-    background-image: url("computerscience.png");
+    width: 100%;
+    height: 20vh ; 
+   /*
+   change height padding btw top
+   removed for to insert a header background-image: url("computerscience.png");*/
   
     
+}
+.navigation{
+    width: 100%;
+    height: 50vh ; 
+    z-index: 1000;
 }
 .img_deg{
     float:right;
@@ -47,7 +54,7 @@ body, h1, h2, p, ul, li {
     transform: translateY(-10px);
 
 }
-.button{
+.navigation .button{
     text-decoration: none;
     top: 156px;
     width: 260px;
@@ -62,7 +69,7 @@ body, h1, h2, p, ul, li {
     background-color: white;
     position: relative;
 }
-.button:hover{
+.navigation .button:hover{
     background-color: rgb(0, 1, 61);
     color: white;
     transition: 0.5s;
@@ -96,7 +103,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #e6f7ff;
+    background-color: #829cbcff;
     color: #261d42;
     text-align: right;
     padding: 10px;
@@ -106,8 +113,8 @@ header {
 }
 
 /* Navigation menu styles */
-nav {
-    background-color: #000770;
+.navigation nav {
+    background-color: #1f487eff;
     text-align: center;
     height: 50px;
 }
@@ -117,17 +124,24 @@ nav ul {
     padding: 0;
 }
 
-nav li {
+.navigation nav li {
     display: inline-block;
     margin-right: 20px;
     font-size: 20px;
     position: relative; /* Create a stacking context for submenus */
-    border-right: 1px solid #4f5677; /* Add a (whiteNOT) border to separate menu items */
+ /*   border-right: 1px solid #4f5677;  Add a (whiteNOT) border to separate menu items
+ removed have
+    to do this way cuz otherwise submemus will also inherit this */
     padding-right: 20px; /* Add some space on the right side of the menu items */
 }
 
 nav li:last-child {
     border-right: none; /* Remove the border on the last menu item */
+}
+#rightb{
+    border-right: 1px solid #040b2b; /* Add a (whiteNOT) border to separate menu items have
+    to do this way cuz otherwise submemus will also inherit this*/
+
 }
 /* Add a pseudo-element to create the separation line *_/
 nav li::before {
@@ -142,7 +156,7 @@ nav li::before {
 }
  */
 
-nav a {
+.navigation nav a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
@@ -156,7 +170,7 @@ nav a {
 
 
 
-ul li a:hover{
+.navigation ul li a:hover{
     background-color: rgb(142, 143, 153);
     color: rgb(29, 23, 23);
     transition: 0.7s;
@@ -169,8 +183,10 @@ ul li a:hover{
         top: 100%; /* Position the submenu below the parent */
         left: 0;
         background-color: #000770;
-        z-index: 2; /* Ensure the submenu appears above the navigation menu */
+
+        z-index: 100; /* Ensure the submenu appears above the navigation menu */
     }
+
 
     .dropdown:hover .submenu {
         display: block;
@@ -200,14 +216,14 @@ ul li a:hover{
         text-align: left; /* Align text to the left */
     }
 
-    /* Add styles for the search toggle button */
-    nav .search-toggle {
+    /* Add styles for the search toggle button search moved to top wrapper*/
+    .navigation nav .search-toggle {
         display: inline-block;
         margin-right: 10px; /* Adjust margin as needed */
     }
     
 
-    nav #search-button {
+    .navigation nav #search-button {
         background-color: #000770;
         color: #ffffff;
         border: none;
@@ -217,13 +233,13 @@ ul li a:hover{
     }
 
     /* Style the icon (magnifying glass) */
-nav #search-button span {
+.navigation nav #search-button span {
     font-size: 20px;
     margin-right: 5px; /* Add spacing between the icon and text if needed */
 }
 
 
-nav #search-button:hover {
+.navigation nav #search-button:hover {
     background-color: #fff; /* Change the background color on hover */
     color: #000770; /* Change the text color on hover */
 }

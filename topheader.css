@@ -1,0 +1,97 @@
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.brand {
+  font-weight: bold;
+  font-size: 20px; }
+
+.site-header {
+  position: relative;
+  background-color: #1d3461ff; }
+
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 600px) {
+    .site-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex; } }
+
+@media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+
+.site-header .nav__item a {
+  display: block;
+  padding: 1.5rem 1.5rem; 
+    color:aliceblue;
+}
+
+
+.nav__toggle {
+  display: none; }
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } }
+
+
+/* Add styles for the search toggle button search moved to top wrapper*/
+header .search-toggle {
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+header #search-button {
+    background-color:transparent;
+    color: #ffffff;
+    border: none;
+    padding: 23px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.site-header .search-button{
+  text-decoration: none;
+  top: 156px;
+  width: 260px;
+  margin-left: 22px;
+  border: 1px rgb(0, 1, 61) solid;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(25, 43, 212);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: white;
+  position: relative;
+}
+header #search-button:hover{
+  
+  color: rgb(218, 22, 22);
+  transition: 0.5s;
+}
+.site-header ul li a:hover{
+  color: rgb(218, 22, 22);
+  transition: 0.5s;
+}
