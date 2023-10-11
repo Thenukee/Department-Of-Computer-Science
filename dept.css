@@ -200,6 +200,34 @@ ul li a:hover{
         text-align: left; /* Align text to the left */
     }
 
+    /* Add styles for the search toggle button */
+    nav .search-toggle {
+        display: inline-block;
+        margin-right: 10px; /* Adjust margin as needed */
+    }
+    
+
+    nav #search-button {
+        background-color: #000770;
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Style the icon (magnifying glass) */
+nav #search-button span {
+    font-size: 20px;
+    margin-right: 5px; /* Add spacing between the icon and text if needed */
+}
+
+
+nav #search-button:hover {
+    background-color: #fff; /* Change the background color on hover */
+    color: #000770; /* Change the text color on hover */
+}
+
 
 /* Main content styles */
 h1{

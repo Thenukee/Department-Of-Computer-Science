@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the entire page */
+/* Set a background image for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Images/6-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #080808; /* Set text color to contrast with the background */
+}
+
+
+/* Style the header */
+/* Style the header */
+header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #3f1d96, #0c0122);
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+#university-logo {
+    height: auto;
+    width: 100px; /* Adjust the width of the logo as needed */
+}
+
+.titles {
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header h2 {
+    font-size: 1.5em;
+}
+
+/* Style the navigation menu */
+nav ul {
+    background: linear-gradient(to right, #f50505, #330101);
+    list-style: none;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav ul li {
+    display: inline-flex;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 15px; /* Add padding for each item */
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+    font-weight:300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+/* Add hover effect */
+nav ul li:hover {
+    background-color: #000000; /* University's dark blue */
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style the main content area */
+main {
+    padding: 20px;
+}
+
+/* Style sections with a semi-transparent background */
+section {
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the alpha value (0.9) to control transparency */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the footer */
+/* Style the footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #f50505, #330101);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+}
+/* Style the download button */
+.download-button {
+    display: inline-block;
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-button:hover {
+    background-color: #1ca7ec;
+    cursor: pointer;
+}
+.know-more-button {
+    background-color: #007acc;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.know-more-button:hover {
+    background-color: #1ca7ec;
+    cursor: pointer;
+}
+
+/* Style for the accordion button */
+.accordion {
+    background-color: #007acc;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Style for the panel (hidden content) */
+.panel {
+    display: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Show the panel when the button is clicked */
+.accordion.active, .accordion:hover {
+    background-color: #1ca7ec;
+}
+
+.accordion.active + .panel {
+    display: block;
+}
+.course-program {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.course-program th, .course-program td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.course-program th {
+    background-color: #007acc;
+    color: #fff;
+}
+
+.course-program tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.learn-more-button {
+    display: block;
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.learn-more-button:hover {
+    background-color: #1ca7ec;
+    cursor: pointer;
+}
