@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science</title>
+    <!--top header-->
+    <link rel="icon" type="image/png" href="Crest-KDU.png"/>
+    <meta name="msapplication-TileImage" content="Crest-KDU.png">
+    <link rel="stylesheet" href="tophreset.min.css" />
+    <link rel="stylesheet" href="tophstyle.css" />
+    <link rel="stylesheet" href="topheader.css" />
+     <!--top header css ends-->
+     
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="dept.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wef2epu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="kdu-logo2.png.webp">
+
+ 
+ <style>
+
+
+
+
             *{
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 padding: 20px 20px 20px 20px;
@@ -390,6 +414,83 @@
         </style>
     </head>
     <body>
+
+        <header >  
+            <div class="container">
+                <div class="site-header">
+                <div class="wrapper site-header__wrapper">
+                    <a href="#" class="brand"><img src="logo_on_top.png.webp" alt="logo_on_top"></a>
+                    <nav class="nav">
+                      <button class="nav__toggle" aria-expanded="false" type="button">
+                        menu
+                      </button>
+                      <ul class="nav__wrapper">
+                        <li class="nav__item"><a href="https://kdu.ac.lk/">kdu.ac</a></li>
+                     <!--  <li class="nav__item"><a href="#">About</a></li>--> 
+                        <li class="search-toggle">
+                            <button id="search-button" aria-label="Search">
+                        
+                                <i class="fas fa-search"></i>
+                                
+                            </button>
+                        </li> 
+                        <li class="nav__item"><a href="#" id="scrollToBottom">Scroll to Bottom</a>
+        
+                            
+        
+                            
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                   <!-- top Header End -->
+           
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="main.html" id="rightb" >Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" id="rightb">Degree Programs <i class="fas fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="CS.html" >Computer Science</a></li>
+                                <li><a href="SE.html" >Software Engineering</a></li>
+                            </ul>
+                        </li>  
+                        <li class="dropdown"> 
+                            <a href="#"id="rightb">Staff <i class="fas fa-chevron-down"></i> </a>  
+                            <ul class="submenu">
+                                <li><a  href="staff.html">Acedemic</a></li>
+                                <li><a href="#">Non Acedemic</a></li>
+                            </ul>
+                         </li>                                        
+                        <li><a href="#" id="rightb">Research</a></li>
+                        <li><a href="contact.html" id="rightb">Contact</a></li>
+                        <li><a href="vision.html">About Us</a></li>
+                        <!-- moving to nav_wrapper
+                        <li class="search-toggle">
+                            <button id="search-button" aria-label="Search">
+                                <span>&#128270;</span>
+                                <i class="fas fa-search"></i>
+        
+        
+                                magnifing glass
+        
+                            </button>
+                        </li> -->
+                    </ul>
+                </nav>   
+                </div> 
+            </div>
+            </header>
+            <br>
+        <div class="main-content">
+
+
+
+
+
+
         <h2 class="topic">BSc (Hons) Computer Science Degree</h2>
         <div class="intro">
             <p>Bachelor of Science (Hons) in Computer Science degree program provides an appropriate understanding of theoretical and algorithmic foundations to cutting-edge developments in robotics, computer vision, intelligent systems, bioinformatics, and other exciting areas in Computer Science domain. Further, this program generally intends to prepare students with skills of Designing and implementing software solutions, devising new ways to use computers, and developing effective ways to solve computing problems as Computer Scientists. In addition to sound fundamental knowledge, students must possess systems thinking, the ability to analyze business problems, communication skills, and teamwork skills in face-to-face and virtual settings. Bachelor of Science (Hons) in Computer Science Degree Program of KDU has been designed in accordance with ACM/IEEE international guidelines and the requirements of Sri Lanka Qualifications Framework.</p>
@@ -2652,6 +2753,8 @@
                                           </div>
             </div>
         </div>
+    </div>
+
         <script>
             
             function toggleTable(module_button) {
@@ -2675,5 +2778,8 @@
 
 
         </script>
+        <script src="js/header-1.js"></script> 
+        <script src="navigation_bar.js"></script>
+        <script src="scroll.js"></script>
     </body>
 </html>

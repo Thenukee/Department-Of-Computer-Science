@@ -13,7 +13,7 @@ body, h1, h2, h3, p, ul, li {
 /* Set a background image for the entire page */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('Images/6-scaled.jpg');
+    background-image: url('6-scaled.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -55,7 +55,7 @@ header h2 {
 
 /* Style the navigation menu */
 nav ul {
-    background: linear-gradient(to right, #f50505, #330101);
+    background: linear-gradient(to right, #376996ff, #1d3461ff);
     list-style: none;
     font-size: large;
     text-align: center;
@@ -102,7 +102,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to right, #f50505, #330101);
+    background: linear-gradient(to right, #376996ff, #1d3461ff);
     color: #fff;
     text-align: center;
     padding: 10px;

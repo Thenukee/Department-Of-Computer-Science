@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="footer.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-color: rgb(37, 60, 92);;">
    
 <header >  
     <div class="container">
@@ -35,7 +35,7 @@
                 menu
               </button>
               <ul class="nav__wrapper">
-                <li class="nav__item"><a href="#">kdu.ac</a></li>
+                <li class="nav__item"><a href="https://kdu.ac.lk/">kdu.ac</a></li>
              <!--  <li class="nav__item"><a href="#">About</a></li>--> 
                 <li class="search-toggle">
                     <button id="search-button" aria-label="Search">
@@ -44,7 +44,12 @@
                         
                     </button>
                 </li> 
-                <li class="nav__item"><a href="#">Down</a></li>
+                <li class="nav__item"><a href="#" id="scrollToBottom">Scroll to Bottom</a>
+
+                    
+
+                    
+                </li>
               </ul>
             </nav>
           </div>
@@ -65,13 +70,13 @@
                 <li class="dropdown"> 
                     <a href="#"id="rightb">Staff <i class="fas fa-chevron-down"></i> </a>  
                     <ul class="submenu">
-                        <li><a  href="#">Acedemic</a></li>
-                        <li><a href="#">Non Acedemic</a></li>
+                        <li><a  href="staff.html">Acedemic</a></li>
+                        <li><a href="https://foc.kdu.ac.lk/administrative-permanent-staff/">Non Acedemic</a></li>
                     </ul>
                  </li>                                        
-                <li><a href="#" id="rightb">Research</a></li>
-                <li><a href="Contact_us.html" id="rightb">Contact</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="https://www.ijrcom.org/index.php/ijrc" id="rightb">Research</a></li>
+                <li><a href="contact.html" id="rightb">Contact</a></li>
+                <li><a href="vision.html">About Us</a></li>
                 <!-- moving to nav_wrapper
                 <li class="search-toggle">
                     <button id="search-button" aria-label="Search">
@@ -121,8 +126,9 @@
 
 
 
-    <div class="pos_cen">
-        <img class="img_deg"  src="https://foc.kdu.ac.lk/computer_science/wp-content/uploads/2021/10/banner1.jpg" alt="Walawwa">
+          <div class="pos_cen">
+        <div class="background-div">
+        <div class="text-container">
      
         
          <h2>
@@ -133,6 +139,8 @@ Welcome to the Faculty of Computing</h2>
          The Department of Computer Science was established on 1st January 2015 with the objective of producing CS professionals of international standard and primarily to fulfill requirements of the booming IT industry and also to develop research. As the youngest department in the faculty it offers course modules related to scientific and theoretical aspects of computing and also introduces new course modules on emerging trends in computing with an emphasis on the developments in Artificial Intelligence.<br>
             <br>The Department of Computer Science is proud to offer two major computing programmes including BSc ( Hons) in Computer Science and BSc (Hons) in Software Engineering. These programs are targeting for physical science students from the GCE A/L. The department engages in a wide spectrum of research in broad areas of Theoretical Computing and Artificial Intelligence. This department also envisages strengthening the faculty wide research culture.</p>
         </div>
+        </div>
+    </div>
             <div class="row">
                 <div class="col">
                     <div class="card card1">
@@ -149,6 +157,14 @@ Welcome to the Faculty of Computing</h2>
                         </div>
                     </div>
                     
+                    <div class="card card3">
+                        <h1>Events</h1>
+                        <div class="card3_btn">
+                            <a href="https://foc.kdu.ac.lk/faculty-news/" class="button">View More</a>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
 
@@ -208,5 +224,7 @@ Welcome to the Faculty of Computing</h2>
 </div>       
 <script src="js/header-1.js"></script> 
 <script src="navigation_bar.js"></script>
+<script src="scroll.js"></script>
+<script src="search.js"></script>
 </body>
 </html>
