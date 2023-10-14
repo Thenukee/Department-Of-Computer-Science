@@ -1,35 +1,94 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: 'Poppins','sans-serif';
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Set a background color and font for the entire page */
-/* Set a background image for the entire page */
+/* Background and general styling */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('6-scaled.jpg');
+    background-image: url('Images/6-scaled.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    color: #080808; /* Set text color to contrast with the background */
+    color: #080808;
+}
+/* Style for the faculty slideshow section */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for dots at the bottom of the slideshow */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 
-/* Style the header */
-/* Style the header */
+/* CSS for the Program Overview section */
+#program-overview {
+    padding: 20px;
+}
+
+.program-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.program-description {
+    flex: 1;
+    padding: 20px;
+}
+
+.program-description h2 {
+    font-size: 24px;
+}
+
+.program-description p {
+    font-size: 16px;
+}
+
+.program-image {
+    flex: 1;
+    text-align: center;
+}
+
+.program-image img {
+    max-width: 100%;
+    height: auto;
+}
+
 header {
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #3f1d96, #0c0122);
+    background: linear-gradient(to bottom, #02034d 25%, #946603 50%, #007acc 100%);
     color: #fff;
-    padding: 20px;
+    padding: 10px;
 }
 
 .logo {
@@ -38,76 +97,74 @@ header {
 
 #university-logo {
     height: auto;
-    width: 100px; /* Adjust the width of the logo as needed */
+    width: 100px;
 }
 
-.titles {
-    color: #fff;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
-header h2 {
-    font-size: 1.5em;
-}
-
-/* Style the navigation menu */
+/* Navigation menu styles */
 nav ul {
-    background: linear-gradient(to right, #376996ff, #1d3461ff);
+    background: linear-gradient(to left, #f50505, #330101);
     list-style: none;
     font-size: large;
     text-align: center;
     display: flex;
-    justify-content: center; /* Center the items horizontally */
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-item.active {
+    background-color: #007acc;
+    color: #fff;
 }
 
 nav ul li {
     display: inline-flex;
     margin: 0;
     transition: background-color 0.3s, color 0.3s;
-    padding: 10px 15px; /* Add padding for each item */
+    padding: 10px 15px;
     text-decoration: none;
     color: #fff;
     font-size: larger;
-    font-weight:300;
-    border-radius: 10px;
+    font-weight: 300;
     transition: background 0.5s, transform 0.5s;
 }
-/* Add hover effect */
+
 nav ul li:hover {
-    background-color: #000000; /* University's dark blue */
+    background-color: #02034d;
     color: #fff;
     cursor: pointer;
 }
 
-/* Style the main content area */
+/* Main content area */
 main {
     padding: 20px;
 }
 
-/* Style sections with a semi-transparent background */
+/* Style for all sections */
 section {
-    background-color: rgba(255, 255, 255, 0.3); /* Adjust the alpha value (0.9) to control transparency */
+    display: none; /* Initially hide all sections */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    color: #fff;
 }
 
-/* Style the footer */
-/* Style the footer */
+/* Style for the home section */
+#home {
+    display: grid; /* Display the home section */
+}
+
+/* Footer styles */
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to right, #376996ff, #1d3461ff);
+    background: linear-gradient(to left, #f50505, #330101);
     color: #fff;
     text-align: center;
     padding: 10px;
 }
-
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
@@ -119,8 +176,9 @@ footer {
         font-size: 1.2em;
     }
 }
-/* Style the download button */
-.download-button {
+
+/* Button styles */
+.download-button, .learn-more-button {
     display: inline-block;
     background-color: #007acc;
     color: #fff;
@@ -128,27 +186,15 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-.download-button:hover {
-    background-color: #1ca7ec;
-    cursor: pointer;
-}
-.know-more-button {
-    background-color: #007acc;
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.know-more-button:hover {
-    background-color: #1ca7ec;
+.download-button:hover, .learn-more-button:hover {
+    background-color: #02034d;
     cursor: pointer;
 }
 
-/* Style for the accordion button */
+/* Accordion button styles */
 .accordion {
     background-color: #007acc;
     color: #fff;
@@ -160,9 +206,10 @@ footer {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-/* Style for the panel (hidden content) */
+/* Panel (hidden content) styles */
 .panel {
     display: none;
     padding: 10px 15px;
@@ -171,19 +218,21 @@ footer {
 
 /* Show the panel when the button is clicked */
 .accordion.active, .accordion:hover {
-    background-color: #1ca7ec;
+    background-color: #02034d;
 }
 
 .accordion.active + .panel {
     display: block;
 }
+
+/* Table styles (no changes to HTML) */
 .course-program {
     width: 100%;
     border-collapse: collapse;
 }
 
 .course-program th, .course-program td {
-    border: 1px solid #ddd;
+    border: 2px solid #b0b0bb;
     padding: 8px;
     text-align: left;
 }
@@ -194,20 +243,139 @@ footer {
 }
 
 .course-program tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-.learn-more-button {
-    display: block;
-    background-color: #007acc;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
+    background-color: #000000;
 }
 
-.learn-more-button:hover {
-    background-color: #1ca7ec;
-    cursor: pointer;
+/* Improved Background Image */
+.program-description {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
 }
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .nav-item {
+        display: block;
+    }
+}
+
+/* Enhanced Panel Styles */
+.accordion.active, .accordion:hover {
+    background-color: #1ca7ec;
+    color: #fff;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(4, 0, 36, 0.5);
+    color: #fff;
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    transform: translateY(-5px);
+}
+/* Add this CSS for the active navigation item */
+.nav-item.active {
+    background-color: #007acc;
+    color: #fff;
+    position: relative;
+    top: -6px; /* Adjust the value to control the vertical position */
+}
+
+
+/* Improved Background Image */
+.body-background {
+    background-image: url('Images/6-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+/* CSS for the Career Opportunities section */
+#careers {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+#careers h2 {
+    font-size: 24px;
+}
+
+.career-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.career-item {
+    flex-basis: calc(33.33% - 20px); /* Adjust the width of each career item */
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.career-item-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for the boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Add a box shadow for depth */
+    background-color: rgba(0, 0, 0, 0.8); /* Background with transparency */
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.career-item h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.career-item p {
+    font-size: 16px;
+}
+
+/* Highlight and bring forward on hover */
+.career-item:hover {
+    transform: scale(1.05); /* Enlarge the box on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Increase box shadow for depth */
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
+}
+
+
+
